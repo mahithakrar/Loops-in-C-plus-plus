@@ -1,0 +1,100 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    long long PRN;
+    int key;
+    int userkey;
+    int choice;
+    bool loggedIn = false;
+
+    cout << "Welcome to SIT Pune website" << endl;
+
+    cout << "Enter your PRN (numbers only): ";
+    cin >> PRN;
+
+    cout << "Set your password (numbers only): ";
+    cin >> key;
+
+    while (true) {
+        cout << "Enter your password: ";
+        cin >> userkey;
+
+        if (userkey == key) {
+            cout << "Login successful!." << endl;
+            loggedIn = true;
+            break;
+        } else {
+            cout << "Incorrect password!" << endl;
+            cout << "1. Change password" << endl;
+            cout << "2. Forgot password" << endl;
+            cout << "3. Exit" << endl;
+            cout << "Enter your choice: ";
+            cin >> choice;
+
+            if (choice == 1) {
+                int oldKey;
+                cout << "Enter your current password: ";
+                cin >> oldKey;
+
+                if (oldKey == key) {
+                    cout << "Enter new password: ";
+                    cin >> key;
+                    cout << "Password changed successfully." << endl;
+                } else {
+                    cout << "Incorrect current password. Cannot change password." << endl;
+                }
+            } else if (choice == 2) {
+                cout << "Please contact admin at:adminhelp@sitpune.edu.in" << endl;
+            } else if (choice == 3) {
+                cout << "You exited from the login page" << endl;
+                break;
+            } else {
+                cout << "Invalid option. Try again." << endl;
+            }
+        }
+    }
+
+    return 0;
+}
+
+//Output:
+//Welcome to SIT Pune website
+//Enter your PRN (numbers only): 1235
+//Set your password (numbers only): 121
+//Enter your password: 121
+//Login successful!.
+
+//Welcome to SIT Pune website
+//Enter your PRN (numbers only): 1235
+//Set your password (numbers only): 123
+//Enter your password: 121
+//Incorrect password!
+//1. Change password
+//2. Forgot password
+//3. Exit
+//Enter your choice: 1
+//Enter your current password: 125
+//Incorrect current password. Cannot change password.
+//Enter your password: 121
+//Incorrect password!
+//1. Change password
+//2. Forgot password
+//3. Exit
+//Enter your choice: 2
+//Please contact admin at:adminhelp@sitpune.edu.in
+//Enter your password: 121
+//Incorrect password!
+//1. Change password
+//2. Forgot password
+//3. Exit
+//Enter your choice: 3
+//You exited from the login page
+
+
+
+
+
+
+
+Login successful!.

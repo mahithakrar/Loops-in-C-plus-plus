@@ -40,38 +40,17 @@ Program Analysis:
 
 6.Printing Star pattern
    Builds a basic triangle shape using stars and prints them left aligned .
-   *
-   **
-   ***
-   ****
-   *****
+   
 
 7. Printing Reverse Star pattern
    Combines spacing and star printing for alignment and aligns pattern right side.
-       *
-      **
-     ***
-    ****
-   *****
-
+       
 8. Floyds Series
   This program prints numbers in ascending order as per the series each in new line using nested for loop.
-  1
-  2 3
-  4 5 6
-  7 8 9 10
-
+  
 9. Hourglass Pattern
     This program prints a symmetric hourglass pattern with the help of teo for loops each used to print the upward and downward triangle respectively.
-    * * * * *
-     * * * *
-      * * *
-       * *
-        *
-       * *
-      * * *
-     * * * *
-    * * * * *
+   
 
 Conclusion:
 Loops in C++ are powerful tools that simplify repetitive tasks, enhance logic control, and improve code readability. Mastering loops (along with control statements like break and continue) is essential for writing efficient and dynamic C++ programs. Whether you’re iterating through data, checking conditions, or building algorithms — loops are at the heart of C++ programming.
